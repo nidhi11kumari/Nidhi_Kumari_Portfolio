@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nidhi Kumari — B.Tech CSE student and aspiring software developer">
+<title>NIDHI KUMARI | Portfolio</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap");
+:root{--bg:#040817;--panel:#0a1024;--panel2:#0d1530;--text:#f5f7ff;--muted:#aab5d0;--line:#1e2c50;--blue:#3b82f6;--purple:#8b5cf6;--cyan:#45a3ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}button{font:inherit}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 80% 15%,rgba(59,130,246,.11),transparent 25%),radial-gradient(circle at 15% 45%,rgba(139,92,246,.08),transparent 25%);pointer-events:none}
+.nav{height:82px;position:sticky;top:0;z-index:20;width:100%;padding:0 max(30px,calc((100% - 1400px)/2));display:flex;align-items:center;justify-content:space-between;background:rgba(4,8,23,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(40,57,94,.55)}.logo{font-size:1.7rem;font-weight:800}.logo span,footer span{color:#7c5cff}.nav nav{display:flex;align-items:center;gap:28px;color:#c0c9df;font-size:.9rem}.nav nav a:hover{color:white}.cv{border:1px solid #324b82;padding:11px 18px;border-radius:12px;color:white!important}.hamb{display:none;background:none;border:0;color:white;font-size:1.5rem}
+.hero{min-height:calc(100vh - 82px);max-width:1400px;margin:auto;padding:70px 55px 55px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;position:relative}.eyebrow,.label{color:#6890ff;font-size:.73rem;font-weight:800;letter-spacing:.16em}.eyebrow{display:inline-block;padding:8px 14px;border:1px solid #1f3971;border-radius:999px;background:rgba(40,90,190,.07)}.eyebrow i{font-style:normal;color:#a16cff;padding:0 6px}.hero h1{font-size:clamp(5rem,9.3vw,9.3rem);line-height:.83;letter-spacing:-.075em;margin:34px 0 25px;font-weight:800}.hero h1 span,.hero h1 strong{display:block}.hero h1 strong{background:linear-gradient(90deg,#3b82f6,#7664ff,#c43cff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero h2{font-size:1.4rem;margin:0 0 18px}.hero h2 b{color:#5c78bc;padding:0 6px}.hero h2 em{font-style:normal;color:#8062ff}.hero-copy>p{max-width:650px;color:#aeb9d2;font-size:1.05rem}.actions{display:flex;gap:14px;margin:28px 0}.actions a{padding:14px 24px;border-radius:12px;font-weight:800}.primary{background:linear-gradient(135deg,#2e7cff,#823bfa);box-shadow:0 12px 35px rgba(55,105,255,.2)}.secondary{border:1px solid #425993;background:rgba(10,16,36,.65)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:35px}.stats div{padding:18px 16px;border:1px solid var(--line);border-radius:15px;background:rgba(10,17,39,.72)}.stats b{display:block;font-size:1.45rem}.stats small{color:#8997b7;font-size:.72rem}
+.hero-photo{height:680px;position:relative;display:grid;place-items:center}.photo-card{height:610px;width:min(455px,78%);border:2px solid #596cff;border-radius:38px;overflow:hidden;background:#070c1d;box-shadow:0 0 0 8px rgba(75,92,255,.06),0 0 65px rgba(44,97,255,.22),0 0 80px rgba(137,56,255,.08)}.photo-card img{width:100%;height:100%;object-fit:cover;object-position:center 18%}.float{position:absolute;padding:18px 22px;border-radius:16px;background:rgba(9,15,35,.94);border:1px solid #344771;box-shadow:0 18px 45px rgba(0,0,0,.35)}.float span{display:block;color:#99a7c4;font-size:.72rem}.float b{font-size:.9rem}.learning{top:17%;right:0}.opportunities{bottom:13%;right:2%}
+.section{max-width:1200px;margin:auto;padding:110px 35px}.section.alt{max-width:none;background:linear-gradient(180deg,#070d20,#091024);padding-left:max(35px,calc((100% - 1130px)/2));padding-right:max(35px,calc((100% - 1130px)/2))}.section-title{font-size:clamp(2.8rem,5vw,4.5rem);letter-spacing:-.05em;line-height:1.05;margin:8px 0 45px}.section-title em{font-style:normal;color:#765fff}.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px}.about-grid p{color:var(--muted);font-size:1.03rem}.about-grid .big{font-size:1.35rem;color:#e8ecf8;line-height:1.5}.about-grid aside{padding:30px;border-radius:22px;border:1px solid #29375c;background:linear-gradient(135deg,#0b1635,#15103a)}.about-grid aside small{color:#7f9cff;letter-spacing:.13em;font-weight:800}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.tags span{padding:6px 10px;border-radius:999px;background:#16244a;color:#8ea8ff;font-size:.72rem;font-weight:800}
+.timeline{max-width:1000px}.timeline article{display:grid;grid-template-columns:145px 1fr;gap:45px;padding:0 0 35px;position:relative}.timeline article:before{content:"";position:absolute;left:158px;top:5px;bottom:-5px;width:1px;background:#233255}.timeline article>time{text-align:right;color:#8492b1;font-size:.78rem;padding-top:4px}.timeline article>div{position:relative;padding:25px;border:1px solid var(--line);border-radius:18px;background:rgba(11,18,40,.85)}.timeline article>div:before{content:"";position:absolute;left:-52px;top:8px;width:12px;height:12px;border-radius:50%;background:#4d7fff;border:3px solid var(--bg)}.timeline span{font-size:.65rem;color:#7898ff;letter-spacing:.12em;font-weight:800}.timeline h3{margin:8px 0 3px;font-size:1.25rem}.timeline p,.timeline b{color:#aeb9d2}.timeline strong{color:white}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill{display:flex;gap:16px;align-items:center;padding:22px;border:1px solid var(--line);border-radius:17px;background:rgba(10,17,39,.78);transition:.25s}.skill:hover{transform:translateY(-4px);border-color:#38548d;box-shadow:0 18px 45px rgba(0,0,0,.25)}.skill>strong{width:50px;height:50px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#10265b,#27164e);color:#77a1ff}.skill h3{margin:0}.skill small{color:#7e8cac}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.project{padding:27px;border:1px solid var(--line);border-radius:24px;background:rgba(10,17,39,.88)}.project-head{display:flex;justify-content:space-between;color:#7799ff}.project-head small{color:#7e8ba9;text-align:right}.project-art{height:170px;margin:20px 0;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,#0c1d47,#421c6b);position:relative;overflow:hidden}.project-art b{font-size:4rem}.project-art i{position:absolute;height:3px;width:150px;bottom:25px;left:25px;background:#6686ff33}.project-art i:nth-child(2){bottom:40px;width:100px}.project-art i:nth-child(3){bottom:55px;width:130px}.project h3{font-size:2rem;margin:0 0 7px}.project>p,.project li{color:#a9b5d0}.project h4{font-size:.72rem;color:#7898ff;letter-spacing:.12em;text-transform:uppercase;margin:22px 0 8px}.project ul{padding-left:20px}.project li{margin:7px 0}.learn{padding:14px;background:#101b3a;border-radius:12px;color:#aab6d0;font-size:.82rem}.learn b{color:#f5f7ff}
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.cert{display:grid;grid-template-columns:190px 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:rgba(10,17,39,.85)}.cert>button{padding:0;border:0;background:#070d1d;cursor:pointer;overflow:hidden}.cert>button img{width:100%;height:100%;min-height:210px;object-fit:cover;transition:.3s}.cert:hover img{transform:scale(1.04)}.cert>div{padding:20px}.cert small{color:#7899ff;font-weight:800}.cert h3{margin:8px 0 3px}.cert b{color:#7899ff;font-size:.82rem}.cert p{color:#99a6c1;font-size:.78rem}.view{padding:0;border:0;background:none;color:#8ea7ff;font-weight:800;cursor:pointer}
+.goal{max-width:1200px;display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}.goal>div:first-child{padding:45px;border-radius:26px;background:linear-gradient(135deg,#0d1a3d,#171041);border:1px solid #263a69}.goal p{color:#aeb9d1}.goal-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.goal-list div{padding:20px;border:1px solid var(--line);border-radius:15px;background:#0a1128;color:#dce2f2}.goal-list b{color:#718fff;margin-right:13px}
+.contact{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}.contact>div>p{color:#aeb9d1;max-width:600px}.contact-card{padding:26px;border:1px solid var(--line);border-radius:22px;background:#0a1128}.contact-card>a,.contact-card>div{display:grid;gap:4px;padding:15px 0;border-bottom:1px solid #1d2a4a}.contact-card small{color:#7798ff;font-weight:800;letter-spacing:.12em}.contact-card b{font-size:.88rem;overflow-wrap:anywhere}.social{display:flex!important;gap:10px}.social a{display:block;padding:11px 15px;border:1px solid #304571;border-radius:11px;color:#90a9ff}
+footer{max-width:1200px;margin:auto;padding:28px 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#7886a5;font-size:.75rem}footer b{font-size:1.1rem;color:white}
+.modal{position:fixed;inset:0;z-index:100;background:#02040ccc;display:grid;place-items:center;padding:25px}.modal>div{position:relative;max-width:1100px;max-height:94vh;background:#091024;border:1px solid #314775;border-radius:18px;overflow:hidden}.modal img{display:block;max-width:100%;max-height:80vh;object-fit:contain}.modal button{position:absolute;right:12px;top:10px;width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:#111;font-size:1.6rem;cursor:pointer}.modal p{padding:8px 18px;color:#9facC6;font-size:.8rem}
+
+@media(max-width:900px){.nav{padding:0 22px}.hamb{display:block}.nav nav{display:none;position:absolute;top:82px;left:0;right:0;padding:20px;background:#05091a;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav nav.open{display:flex}.hero{grid-template-columns:1fr;padding:60px 25px}.hero-photo{height:560px}.about-grid,.goal,.contact{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.cert-grid{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.hero h1{font-size:4.5rem}.hero h2{font-size:1rem}.stats{grid-template-columns:1fr 1fr}.hero-photo{height:480px}.photo-card{height:470px;width:88%}.float{display:none}.section{padding:75px 22px}.section.alt{padding-left:22px;padding-right:22px}.skill-grid,.project-grid,.goal-list{grid-template-columns:1fr}.timeline article{grid-template-columns:1fr;gap:7px;padding-left:25px}.timeline article:before{left:0}.timeline article>div:before{left:-32px}.timeline article>time{text-align:left}.cert{grid-template-columns:1fr}.cert>button{height:220px}footer{flex-direction:column;padding:25px 22px}}
+
+/* Standalone-file additions */
+html{scroll-padding-top:82px}
+.cert>div{min-width:0}
+.modal{cursor:zoom-out}
+.modal>div{cursor:default}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script>
+const skills = [
+  ["C++","Programming","C++"],["C","Programming","C"],["Python","Programming","Py"],
+  ["HTML","Web Development","<>"],["CSS","Web Development","#"],["JavaScript","Web Development","JS"],
+  ["DSA","Core CS","◇"],["OOPs","Core CS","OOP"],["Git & GitHub","Tools","⌘"]
+];
+
+const projects = [
+  {
+    title:"Amazon Clone", type:"Responsive E-Commerce Front-End",
+    desc:"A responsive front-end recreation of the Amazon homepage, developed to practice modern web design and front-end development fundamentals.",
+    features:[
+      "Structured e-commerce homepage with navigation, search and category sections.",
+      "Product sections with images, titles and pricing layouts.",
+      "Promotional banners and visually organized content sections.",
+      "Clean layouts, spacing, typography and responsive design."
+    ],
+    tech:["HTML","CSS"],
+    learn:"Responsive layouts, Flexbox, semantic HTML, CSS positioning and UI consistency."
+  },
+  {
+    title:"Chess Game", type:"Interactive Browser-Based Game",
+    desc:"An interactive chess game developed using HTML, CSS and JavaScript to practice programming logic, user interaction and dynamic webpage manipulation.",
+    features:[
+      "Interactive chessboard interface.",
+      "Clickable pieces and board interactions.",
+      "JavaScript-based movement and game-flow logic.",
+      "DOM manipulation and event handling."
+    ],
+    tech:["HTML","CSS","JavaScript"],
+    learn:"JavaScript logic, DOM manipulation, event handling, debugging and breaking complex problems into smaller components."
+  }
+];
+
+const certs = [
+  {title:"C++ Programming",issuer:"Infosys | Springboard",date:"July 2026",meta:"150 Hours",img:"certificates/cpp-certificate.jpg",desc:"Course completion certificate focused on C++ programming concepts and problem-solving."},
+  {title:"Data Structures and Algorithms",issuer:"Infosys | Springboard",date:"July 2026",meta:"150 Hours",img:"certificates/dsa-certificate.jpg",desc:"Course completion certificate strengthening data structures, algorithms and computational problem-solving."},
+  {title:"Computer Programming",issuer:"iamneo | NIELIT",date:"18 Jan – 20 May 2026",meta:"150 Hours",img:"certificates/computer-programming.jpg",desc:"Certificate of appreciation for completing a 150-hour computer programming course."},
+  {title:"Introduction to Python",issuer:"Infosys | Springboard",date:"February 8, 2026",meta:"Course Completion",img:"certificates/python-certificate.jpg",desc:"Course completion certificate covering foundational Python programming concepts."}
+];
+
+const nav = ["About","Education","Skills","Projects","Certificates","My Goal","Let's Connect"];
+
+function escapeHtml(value){
+  return String(value).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
+function app(){
+  const root = document.getElementById("root");
+  root.innerHTML = `
+  <div>
+    <header class="nav">
+      <a href="#home" class="logo">Nidhi<span>.</span></a>
+      <button class="hamb" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav>
+        ${nav.map(x => `<a href="#${x==="Let's Connect"?"contact":x.toLowerCase().replace(" ","-")}">${x}</a>`).join("")}
+        <a class="cv" href="mailto:nidhi.kumari.career@gmail.com?subject=CV%20Request">Download CV ↓</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">B.TECH CSE STUDENT <i>•</i> ASPIRING SOFTWARE DEVELOPER</div>
+          <h1><span>NIDHI</span><strong>KUMARI</strong></h1>
+          <h2>B.Tech CSE Student <b>|</b> <em>Aspiring Software Developer</em></h2>
+          <p>I’m a second-year Computer Science student at Lovely Professional University, passionate about coding, technology and continuous learning.</p>
+          <div class="actions"><a class="primary" href="#projects">View My Projects →</a><a class="secondary" href="#contact">Let's Connect ♙</a></div>
+          <div class="stats">
+            <div><b>9.62</b><small>Current CGPA</small></div>
+            <div><b>2029</b><small>Expected Graduation</small></div>
+            <div><b>4</b><small>Certificates</small></div>
+            <div><b>Focus</b><small>Learn · Build · Grow</small></div>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-card"><img src="nidhi-photo.jpg" alt="Nidhi Kumari"></div>
+          <div class="float learning"><span>Currently Learning</span><b>C++ · JavaScript<br>DSA</b></div>
+          <div class="float opportunities"><span>Open to</span><b>Internships &<br>Opportunities</b></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="label">01 · GET TO KNOW ME</div><h2 class="section-title">About <em>Me</em></h2>
+        <div class="about-grid">
+          <div>
+            <p class="big">I’m a passionate <b>B.Tech Computer Science student at Lovely Professional University</b>, currently in my second year.</p>
+            <p>I enjoy turning ideas into practical solutions through coding and technology. With a growing foundation in <b>C++, JavaScript, and Data Structures & Algorithms</b>, I’m continuously exploring new technologies, building projects, and strengthening my problem-solving skills to prepare for a career in <b>software development</b>.</p>
+          </div>
+          <aside><small>MY CURRENT FOCUS</small><div class="tags"><span>C++</span><span>JavaScript</span><span>DSA</span><span>Problem Solving</span></div><p>Learning consistently, building practically, and growing one project at a time.</p></aside>
+        </div>
+      </section>
+
+      <section id="education" class="section alt">
+        <div class="label">02 · ACADEMIC JOURNEY</div><h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <article><time>2025 — 2029</time><div><span>CURRENTLY IN 2ND YEAR</span><h3>B.Tech — Computer Science & Engineering</h3><b>Lovely Professional University (LPU) · Phagwara, Punjab</b><p>Current CGPA: <strong>9.62</strong> · Expected Graduation: <strong>2029</strong></p></div></article>
+          <article><time>2023 — 2024</time><div><span>INTERMEDIATE · CLASS XII</span><h3>89%</h3><b>BCM School, Basant Avenue, Dugri, Ludhiana</b></div></article>
+          <article><time>2021 — 2022</time><div><span>MATRICULATION · CLASS X</span><h3>97%</h3><b>BCM School, Basant Avenue, Dugri, Ludhiana</b></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="label">03 · WHAT I WORK WITH</div><h2 class="section-title">Skills</h2>
+        <div class="skill-grid">${skills.map(s => `<div class="skill"><strong>${escapeHtml(s[2])}</strong><div><h3>${escapeHtml(s[0])}</h3><small>${escapeHtml(s[1])}</small></div></div>`).join("")}</div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="label">04 · BUILDING & LEARNING</div><h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+          ${projects.map((p,i) => `
+          <article class="project">
+            <div class="project-head"><span>0${i+1}</span><small>${escapeHtml(p.type)}</small></div>
+            <div class="project-art"><b>${i?"♟":"⌘"}</b><i></i><i></i><i></i></div>
+            <h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.desc)}</p>
+            <h4>Key Features</h4><ul>${p.features.map(f => `<li>${escapeHtml(f)}</li>`).join("")}</ul>
+            <div class="tags">${p.tech.map(t => `<span>${escapeHtml(t)}</span>`).join("")}</div>
+            <div class="learn"><b>What I learned:</b> ${escapeHtml(p.learn)}</div>
+          </article>`).join("")}
+        </div>
+      </section>
+
+      <section id="certificates" class="section">
+        <div class="label">05 · CONTINUOUS LEARNING</div><h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+          ${certs.map((c,i) => `
+          <article class="cert">
+            <button class="cert-image" data-cert="${i}" aria-label="View ${escapeHtml(c.title)}">
+              <img src="${c.img}" alt="${escapeHtml(c.title)}">
+            </button>
+            <div>
+              <small>${escapeHtml(c.date)} · ${escapeHtml(c.meta)}</small>
+              <h3>${escapeHtml(c.title)}</h3><b>${escapeHtml(c.issuer)}</b>
+              <p>${escapeHtml(c.desc)}</p>
+              <button class="view" data-cert="${i}">View Certificate ↗</button>
+            </div>
+          </article>`).join("")}
+        </div>
+      </section>
+
+      <section id="my-goal" class="section goal">
+        <div><div class="label">06 · LOOKING AHEAD</div><h2 class="section-title">My <em>Goal</em></h2><p>To become a skilled software engineer and build technology that creates meaningful impact.</p></div>
+        <div class="goal-list">${["Work on impactful projects","Keep growing technical expertise","Contribute, collaborate and lead","Make a positive difference in the tech industry"].map((x,i)=>`<div><b>0${i+1}</b>${escapeHtml(x)}</div>`).join("")}</div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div><div class="label">07 · LET'S CONNECT</div><h2 class="section-title">Have an idea?<br><em>Let's build something.</em></h2><p>I’d love to connect, collaborate, learn, and explore opportunities in technology and software development.</p></div>
+        <div class="contact-card">
+          <a href="mailto:nidhi.kumari.career@gmail.com"><small>EMAIL</small><b>nidhi.kumari.career@gmail.com</b></a>
+          <a href="tel:+919815601816"><small>PHONE</small><b>+91 98156 01816</b></a>
+          <div><small>LOCATION</small><b>Ludhiana, Punjab, India</b></div>
+          <div class="social"><a href="https://www.linkedin.com/in/nidhi-kumari-b542b1365" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/nidhi11kumari" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><b>Nidhi<span>.</span></b><span>B.Tech CSE Student · Aspiring Software Developer</span><span>© 2026 Nidhi Kumari</span></footer>
+
+    <div class="modal" id="modal" style="display:none">
+      <div><button id="closeModal" aria-label="Close certificate">×</button><img id="modalImg" alt=""><p id="modalText"></p></div>
+    </div>
+  </div>`;
+
+  const menuBtn = document.querySelector(".hamb");
+  const navEl = document.querySelector(".nav nav");
+  menuBtn.addEventListener("click", () => {
+    const open = navEl.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  navEl.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    navEl.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded","false");
+  }));
+
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modalImg");
+  const modalText = document.getElementById("modalText");
+
+  function openCert(i){
+    const c = certs[i];
+    modalImg.src = c.img;
+    modalImg.alt = c.title;
+    modalText.innerHTML = "<b>" + escapeHtml(c.title) + "</b> · " + escapeHtml(c.issuer);
+    modal.style.display = "grid";
+    document.body.style.overflow = "hidden";
+  }
+  function closeCert(){
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("[data-cert]").forEach(el => {
+    el.addEventListener("click", e => {
+      e.stopPropagation();
+      openCert(Number(el.dataset.cert));
+    });
+  });
+  document.getElementById("closeModal").addEventListener("click", closeCert);
+  modal.addEventListener("click", e => { if(e.target === modal) closeCert(); });
+  document.addEventListener("keydown", e => { if(e.key === "Escape") closeCert(); });
+}
+
+app();
+</script>
+</body>
+</html>
